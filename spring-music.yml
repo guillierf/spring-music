@@ -1,0 +1,22 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: "spring-music"
+spec:
+  replicas: 6
+  minReadySeconds: 30
+  revisionHistoryLimit: 2
+  strategy:
+    rollingUpdate:
+      maxSurge: "25%"
+  template:
+    metadata:
+      labels:
+        app: "spring-music"
+    spec:
+      containers:
+        - name: "spring-music"
+          image: "mxplusb/spring-music"
+          imagePullPolicy: "Always"
+          ports:
+            - containerPort: 8080

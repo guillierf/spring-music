@@ -14,12 +14,12 @@
 
 .navbar .container {
     background-color: #ff0000;
-    background-image: -moz-linear-gradient(top, #0000ff, #0000ff);
-    background-image: -ms-linear-gradient(top, #008a00, #0000ff);
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0000ff), to(#0000ff));
-    background-image: -webkit-linear-gradient(top, #0000ff, #0000ff);
-    background-image: -o-linear-gradient(top, #0000ff, #0000ff);
-    background-image: linear-gradient(top, #0000ff, #0000ff);
+    background-image: -moz-linear-gradient(top, #008a00, #006b00);
+    background-image: -ms-linear-gradient(top, #008a00, #006b00);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#008a00), to(#006b00));
+    background-image: -webkit-linear-gradient(top, #008a00, #006b00);
+    background-image: -o-linear-gradient(top, #008a00, #006b00);
+    background-image: linear-gradient(top, #008a00, #006b00);
 }
 
 .navbar .navbar-brand {

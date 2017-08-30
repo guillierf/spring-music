@@ -2,8 +2,9 @@
 
 now=$(date +"%s")
 
-docker build -t mxplusb/spring-music:"$now" .
-docker push mxplusb/spring-music:"$now"
+docker login 10.40.206.145 -u admin -p 'VMware1!'
+docker build -t 10.40.206.145/library/spring-music:"$now" .
+docker push 10.40.206.145/library/spring-music:"$now"
 
-kubectl set image deployments/spring-music spring-music="mxplusb/spring-music:$now" --record
+kubectl set image deployments/spring-music spring-music="10.40.206.145/library/spring-music:$now" --record
 
